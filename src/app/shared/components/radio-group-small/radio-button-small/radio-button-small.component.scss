@@ -1,0 +1,21 @@
+@import "src/assets/scss/variables";
+
+:host {
+  width: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid $active-color-main;
+  box-sizing: border-box;
+
+  span {
+    color: $active-color-secondary;
+  }
+
+  &.active {
+    span {
+      color: $main-text-color;
+    }
+  }
+}

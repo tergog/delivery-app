@@ -1,0 +1,22 @@
+@import "src/assets/scss/variables";
+
+.overlay {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: calc(100% - 200px);
+  background-image: url(src/assets/images/main-background.png);
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.35;
+    background-color: $main-color;
+    z-index: -1;
+  }
+}

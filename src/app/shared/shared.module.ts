@@ -5,13 +5,19 @@ import { CircleIconComponent } from './components/circle-icon/circle-icon.compon
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { RadioGroupComponent } from './components/radio-group/radio-group.component';
 import { RadioButtonComponent } from './components/radio-group/radio-button/radio-button.component';
+import { SelectComponent } from './components/select/select.component';
+import { RadioGroupSmallComponent } from './components/radio-group-small/radio-group-small.component';
+import { RadioButtonSmallComponent } from './components/radio-group-small/radio-button-small/radio-button-small.component';
 
 @NgModule({
   declarations: [
     CircleIconComponent,
     SearchBarComponent,
     RadioGroupComponent,
-    RadioButtonComponent
+    RadioButtonComponent,
+    SelectComponent,
+    RadioGroupSmallComponent,
+    RadioButtonSmallComponent
   ],
   imports: [
     CommonModule
@@ -20,13 +26,16 @@ import { RadioButtonComponent } from './components/radio-group/radio-button/radi
     CircleIconComponent,
     SearchBarComponent,
     RadioGroupComponent,
-    RadioButtonComponent
+    RadioButtonComponent,
+    SelectComponent,
+    RadioGroupSmallComponent
   ],
   entryComponents: [
     CircleIconComponent,
     SearchBarComponent,
     RadioGroupComponent,
-    RadioButtonComponent
+    RadioButtonComponent,
+    SelectComponent
   ]
 })
 

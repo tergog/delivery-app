@@ -15,6 +15,10 @@ body {
     color: $main-text-color;
   }
 
+  &__secondary {
+    color: $secondary-color;
+  }
+
   &__light {
     color: $main-color-light;
   }
@@ -67,6 +71,10 @@ button {
   &__flex {
     display: flex;
 
+    &--inline {
+      display: inline-flex;
+    }
+
     &--column {
       flex-direction: column;
     }
@@ -99,6 +107,16 @@ button {
       margin-left: 55px;
     }
   }
+
+  &__bottom {
+    &--5 {
+      margin-bottom: 5px;
+    }
+
+    &--20 {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .p {
@@ -106,5 +124,11 @@ button {
     &--10 {
       padding-right: 10px;
     }
+  }
+}
+
+.w {
+  &__100 {
+    width: 100%;
   }
 }

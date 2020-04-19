@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables";
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 528px;
+  height: 664px;
+  box-sizing: border-box;
+
+  box-shadow: 3px 5px 10px rgba(89, 98, 112, 0.5);
+  border-radius: 25px;
+  background-color: $main-bg-color;
+  padding: 39px 72px 35px 72px;
+}
+
+img {
+  width: 85px;
+  height: 117px;
+}
