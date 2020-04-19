@@ -1,0 +1,25 @@
+@import "src/assets/scss/variables";
+
+:host {
+  width: 285px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+app-radio-button {
+  &:first-child {
+    box-shadow: 0 2px 2px rgba(89, 98, 112, 0.5);
+    border-radius: 0 25px 25px 0;
+  }
+
+  &:last-child {
+    box-shadow: 0 6px 6px rgba(179, 72, 65, 0.3);
+    border-radius: 25px 0 0 25px;
+    margin-right: 1px;
+  }
+}
+
+.active {
+  background: linear-gradient(180.61deg, $active-color-main -2.94%, $active-color-secondary 95.39%);
+}
+

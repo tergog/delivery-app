@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/assets/scss/icons";
+@import "src/assets/scss/variables";
+@import "src/assets/scss/fonts";
+
+body {
+  height: 100vh;
+}
+
+.text {
+  font-family: Secular One;
+  font-style: normal;
+  font-weight: normal;
+
+  &__main {
+    color: $main-text-color;
+  }
+
+  &__light {
+    color: $main-color-light;
+  }
+
+  &__active {
+    color: $active-color-main;
+  }
+
+  &__small {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  &__medium {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 87px;
+  }
+
+  &__shadow {
+    text-shadow: 0 2px 2px rgba(89, 98, 112, 0.5);
+  }
+}
+
+input {
+  font-family: Secular One;
+  font-style: normal;
+  font-weight: normal;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  font-size: 33px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  border: 2px solid $main-color;
+  border-radius: 25px;
+  outline: none;
+}
+
+.d {
+  &__flex {
+    display: flex;
+
+    &--column {
+      flex-direction: column;
+    }
+
+    &--justify-center {
+      justify-content: center;
+    }
+
+    &--items-center {
+      align-items: center;
+    }
+  }
+}
+
+.m {
+  &__left {
+    &--10 {
+      margin-left: 10px;
+    }
+
+    &--20 {
+      margin-left: 20px;
+    }
+
+    &--40 {
+      margin-left: 40px;
+    }
+
+    &--55 {
+      margin-left: 55px;
+    }
+  }
+}
+
+.p {
+  &__right {
+    &--10 {
+      padding-right: 10px;
+    }
+  }
+}

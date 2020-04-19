@@ -1,0 +1,83 @@
+@import "src/assets/scss/variables";
+
+:host {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: $main-color;
+  padding: 25px 120px;
+  box-sizing: border-box;
+}
+
+.profile {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  opacity: 0.5;
+  border: 2px solid $main-color-light;
+  box-shadow: 0 2px 2px rgba(89, 98, 112, 0.5);
+  background: url(src/assets/images/icons/profile.svg) center center no-repeat;
+}
+
+.main-menu-text {
+  width: 180px;
+}
+
+.push-block {
+  display: none;
+  flex: 1;
+}
+
+@media only screen and (max-width: 1439px) {
+  :host {
+    justify-content: space-between;
+  }
+
+  app-radio-group {
+    display: none;
+  }
+
+  .push-block {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  app-search-bar {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  :host {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-wrap {
+    display: none;
+  }
+
+  .push-block {
+    display: none;
+  }
+
+  .main-menu-wrap {
+    flex: 1
+  }
+
+  .main-menu-text {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+  }
+
+  .main-menu-icon {
+    margin: 0;
+  }
+}
+

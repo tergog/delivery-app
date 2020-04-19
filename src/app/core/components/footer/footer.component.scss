@@ -1,0 +1,52 @@
+@import "src/assets/scss/variables";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: $secondary-color;
+  padding: 25px 120px;
+  box-sizing: border-box;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 44px;
+  padding-left: 10px;
+  margin-left: 10px;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #E8ECF0;
+    display: inline-block;
+    opacity: 0.2;
+  }
+
+  &:last-of-type:after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :host {
+    justify-content: center;
+    padding: 25px;
+  }
+
+  .footer-menu {
+    display: none;
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+  }
+}
