@@ -40,6 +40,7 @@ app-card {
 
 @media only screen and (max-width: 800px) {
   :host {
+    padding: 0;
     flex-direction: column;
   }
 
@@ -48,7 +49,7 @@ app-card {
   }
 
   app-card {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 
     &:first-of-type {
       margin-left: 0 !important;
@@ -57,5 +58,15 @@ app-card {
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  .text__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text__title {
+    margin-bottom: 0;
   }
 }
