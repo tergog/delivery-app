@@ -1,18 +1,38 @@
-<span class="text text__title text__main">איסוף עצמי</span>
-
+<span class="text text__title text__main-light">איסוף עצמי</span>
 
 <div class="card">
   <img class="m__bottom--20" src="assets/images/icons/food-bag.svg" alt="">
 
   <div class="w__100">
-    <div class="d__flex--inline d__flex--column m__left--20">
+    <div class="d__flex--inline d__flex--column m__left--20 m__bottom--20 m__left--xs--15">
       <span class="text text__small text__secondary m__bottom--5">מה הכי קרוב ?</span>
-      <app-select></app-select>
+      <app-select class="w__xs--152" [text]="'סניף'"></app-select>
     </div>
 
     <div class="d__flex--inline d__flex--column">
       <span class="text text__small text__secondary m__bottom--5">מתי ?</span>
       <app-radio-group-small></app-radio-group-small>
     </div>
+
+    <div class="d__flex--inline d__flex--column m__bottom--20">
+      <span class="text text__small text__secondary">זמן הכנה משוער: עד 50 דקות</span>
+      <span class="text text__x-small text__alef text__main opacity__5 m__bottom--5">ייתכן עיכוב של 20 דקות בהזמנה</span>
+      <app-select [isTimeSelect]="true" [text]="'13:00'"></app-select>
+    </div>
+
+    <div class="d__flex--inline d__flex--column m__bottom--38">
+      <span class="text text__small text__secondary">מי אוכל?</span>
+      <span class="text text__x-small text__alef text__main opacity__5 m__bottom--5">לא חובה, רק כדי שנדע להפריד עבורך בין המנות</span>
+      <app-input [placeholder]="'שם אחד בכל פעם'"></app-input>
+    </div>
+
+    <div class="d__flex d__flex--items-center d__flex--column">
+      <button class="active w__284 m__bottom--15">
+        <span class="text text__main-light text__small">ההזמנה אישור והמשך</span>
+      </button>
+
+      <a href="" class="text text__x-small opacity__5 text__alef link">בא לכם לקחת לבד ?</a>
+    </div>
+
   </div>
 </div>

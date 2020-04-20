@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .card {
@@ -13,7 +14,6 @@
   align-items: center;
   width: 528px;
   height: 664px;
-  box-sizing: border-box;
 
   box-shadow: 3px 5px 10px rgba(89, 98, 112, 0.5);
   border-radius: 25px;
@@ -24,4 +24,30 @@
 img {
   width: 85px;
   height: 117px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 386px;
+    height: 690px;
+    padding: 43px 20px 26px 19px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card {
+    width: 350px;
+    height: 690px;
+    padding: 43px 20px 26px 19px;
+  }
+
+  :host ::ng-deep {
+    app-radio-group-small {
+      width: 144px;
+
+      app-radio-button-small {
+        width: 72px;
+      }
+    }
+  }
 }

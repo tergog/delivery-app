@@ -6,13 +6,25 @@ body {
   height: 100vh;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .text {
   font-family: Secular One;
   font-style: normal;
   font-weight: normal;
 
   &__main {
+    color: $main-color;
+  }
+
+  &__main-light {
     color: $main-text-color;
+  }
+
+  &__alef {
+    font-family: Alef;
   }
 
   &__secondary {
@@ -25,6 +37,11 @@ body {
 
   &__active {
     color: $active-color-main;
+  }
+
+  &__x-small {
+    font-size: 20px;
+    line-height: 22px;
   }
 
   &__small {
@@ -47,10 +64,32 @@ body {
   }
 }
 
+.opacity {
+  &__5 {
+    opacity: 0.5;
+  }
+}
+
+.link {
+  color: $active-color-main;
+}
+
 input {
-  font-family: Secular One;
+  font-family: Alef;
   font-style: normal;
   font-weight: normal;
+  font-size: 22px;
+  line-height: 24px;
+  width: 100%;
+  height: 22px;
+  color: $main-color;
+  outline: none;
+  background-color: transparent;
+  border: none;
+
+  &::placeholder {
+    color: $main-color;
+  }
 }
 
 button {
@@ -65,6 +104,13 @@ button {
   border: 2px solid $main-color;
   border-radius: 25px;
   outline: none;
+
+  &.active {
+    background: linear-gradient(171.12deg, $active-color-main 14.06%, $active-color-secondary 83.67%);
+    box-shadow: 0 6px 6px rgba(179, 72, 65, 0.3);
+    opacity: 1;
+    border: none;
+  }
 }
 
 .d {
@@ -106,6 +152,14 @@ button {
     &--55 {
       margin-left: 55px;
     }
+
+    @media only screen and (max-width: 600px) {
+      &--xs {
+        &--15 {
+          margin-left: 15px;
+        }
+      }
+    }
   }
 
   &__bottom {
@@ -113,8 +167,20 @@ button {
       margin-bottom: 5px;
     }
 
+    &--10 {
+      margin-bottom: 10px;
+    }
+
+    &--15 {
+      margin-bottom: 20px;
+    }
+
     &--20 {
       margin-bottom: 20px;
+    }
+
+    &--38 {
+      margin-bottom: 38px;
     }
   }
 }
@@ -129,6 +195,21 @@ button {
 
 .w {
   &__100 {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  &__126 {
+    width: 126px !important;
+  }
+
+  &__284 {
+    width: 284px;
+  }
+  @media only screen and (max-width: 600px) {
+    &__xs {
+      &--152 {
+        width: 152px !important;
+      }
+    }
   }
 }

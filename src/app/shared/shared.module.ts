@@ -8,6 +8,7 @@ import { RadioButtonComponent } from './components/radio-group/radio-button/radi
 import { SelectComponent } from './components/select/select.component';
 import { RadioGroupSmallComponent } from './components/radio-group-small/radio-group-small.component';
 import { RadioButtonSmallComponent } from './components/radio-group-small/radio-button-small/radio-button-small.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RadioButtonSmallComponent } from './components/radio-group-small/radio-
     RadioButtonComponent,
     SelectComponent,
     RadioGroupSmallComponent,
-    RadioButtonSmallComponent
+    RadioButtonSmallComponent,
+    InputComponent
   ],
   imports: [
     CommonModule
@@ -28,7 +30,8 @@ import { RadioButtonSmallComponent } from './components/radio-group-small/radio-
     RadioGroupComponent,
     RadioButtonComponent,
     SelectComponent,
-    RadioGroupSmallComponent
+    RadioGroupSmallComponent,
+    InputComponent
   ],
   entryComponents: [
     CircleIconComponent,

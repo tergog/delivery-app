@@ -6,7 +6,8 @@ import {Component, HostBinding, Input, OnInit} from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  @HostBinding('class.active') @Input() isActive: boolean;
+  @HostBinding('class.active')
+  @Input() isActive: boolean;
   @Input() type: string;
   @Input() buttonText: string;
 
