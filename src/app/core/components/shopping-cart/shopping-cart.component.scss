@@ -1,0 +1,14 @@
+@import "src/assets/scss/variables";
+
+:host {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  width: 398px;
+  height: 806px;
+  background-color: $secondary-color;
+  border-radius: 35px;
+  padding: 24px 15px 17px 15px;
+}

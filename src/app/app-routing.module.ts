@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'takeaway',
     loadChildren: () => import('./pages/takeaway/takeaway.module').then(m => m.TakeawayModule)
+  },
+  {
+    path: 'product-list',
+    loadChildren: () => import('./pages/product-list/product-list.module').then(m => m.ProductListModule)
   }
 ];
 

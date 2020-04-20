@@ -1,6 +1,7 @@
 @import "src/assets/scss/icons";
 @import "src/assets/scss/variables";
 @import "src/assets/scss/fonts";
+@import "src/assets/scss/spacing";
 
 body {
   height: 100vh;
@@ -125,91 +126,16 @@ button {
       flex-direction: column;
     }
 
+    &--justify-between {
+      justify-content: space-between;
+    }
+
     &--justify-center {
       justify-content: center;
     }
 
     &--items-center {
       align-items: center;
-    }
-  }
-}
-
-.m {
-  &__left {
-    &--10 {
-      margin-left: 10px;
-    }
-
-    &--20 {
-      margin-left: 20px;
-    }
-
-    &--40 {
-      margin-left: 40px;
-    }
-
-    &--55 {
-      margin-left: 55px;
-    }
-
-    @media only screen and (max-width: 600px) {
-      &--xs {
-        &--15 {
-          margin-left: 15px;
-        }
-      }
-    }
-  }
-
-  &__bottom {
-    &--5 {
-      margin-bottom: 5px;
-    }
-
-    &--10 {
-      margin-bottom: 10px;
-    }
-
-    &--15 {
-      margin-bottom: 20px;
-    }
-
-    &--20 {
-      margin-bottom: 20px;
-    }
-
-    &--38 {
-      margin-bottom: 38px;
-    }
-  }
-}
-
-.p {
-  &__right {
-    &--10 {
-      padding-right: 10px;
-    }
-  }
-}
-
-.w {
-  &__100 {
-    width: 100% !important;
-  }
-
-  &__126 {
-    width: 126px !important;
-  }
-
-  &__284 {
-    width: 284px;
-  }
-  @media only screen and (max-width: 600px) {
-    &__xs {
-      &--152 {
-        width: 152px !important;
-      }
     }
   }
 }
