@@ -24,6 +24,10 @@ body {
     color: $main-text-color;
   }
 
+  &__line-through {
+    text-decoration: line-through;
+  }
+
   &__alef {
     font-family: Alef;
   }
@@ -40,9 +44,19 @@ body {
     color: $active-color-main;
   }
 
+  &__number {
+    font-size: 27px;
+    line-height: 27px;
+  }
+
   &__x-small {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  &__xx-small {
+    font-size: 18px;
+    line-height: 20px;
   }
 
   &__small {
@@ -52,7 +66,7 @@ body {
 
   &__medium {
     font-size: 33px;
-    line-height: 48px;
+    line-height: 33px;
   }
 
   &__title {
@@ -114,12 +128,22 @@ button {
   }
 }
 
+.pos {
+  &__relative {
+    position: relative;
+  }
+}
+
 .d {
   &__flex {
     display: flex;
 
     &--inline {
       display: inline-flex;
+    }
+
+    &__wrap {
+      flex-wrap: wrap;
     }
 
     &--column {

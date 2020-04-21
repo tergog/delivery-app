@@ -26,6 +26,7 @@ import { ShoppingItemComponent } from './components/shopping-cart/shopping-item/
   entryComponents: [
     HeaderComponent,
     FooterComponent,
+    ShoppingCartComponent
   ]
 })
 

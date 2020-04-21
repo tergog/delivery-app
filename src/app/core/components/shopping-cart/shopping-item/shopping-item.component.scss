@@ -1,0 +1,39 @@
+@import "src/assets/scss/variables";
+
+:host {
+  display: flex;
+  width: 368px;
+  height: 96px;
+  border-radius: 10px;
+  background-color: $main-color-light;
+  overflow: hidden;
+}
+
+.custom-padding {
+  padding: 13px 14px 8px 11px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 78px;
+  background-color: $main-bg-color;
+  padding: 0 11px 9px;
+}
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  &.success {
+    border: 2px solid $success-color;
+  }
+
+  &.warning {
+    border: 2px solid $warning-color;
+  }
+}

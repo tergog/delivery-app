@@ -1,5 +1,5 @@
 <div class="d__flex d__flex--justify-between d__flex--items-center w__100 m__bottom--25">
-  <span class="text text__small text__main-light p__right--14">ההזמנה שלך</span>
+  <span class="text text__medium text__main-light p__right--14">ההזמנה שלך</span>
 
   <div class="d__flex d__flex--column p__left--14">
     <span class="text text__x-small text__alef text__main opacity__5">מינימום</span>
@@ -7,6 +7,52 @@
   </div>
 </div>
 
-<app-radio-group class="d__flex"></app-radio-group>
+<app-radio-group class="d__flex m__bottom--30"></app-radio-group>
 
-<app-shopping-item *ngFor="let item of shoppingItems"></app-shopping-item>
+<app-shopping-item class="m__bottom--10" *ngFor="let item of shoppingItems" [shoppingItem]="item"></app-shopping-item>
+
+<div class="shopping-item-disabled">
+  <div class="shopping-item-description">
+    <span class="text text__xx-small text__secondary">שליחות</span>
+  </div>
+
+  <div class="price-disabled">
+    <div class="background-opacity"></div>
+    <span class="text text__secondary m__right__3 text__xx-small pos__relative">₪</span>
+    <span class="text text__secondary text__number pos__relative">20</span>
+  </div>
+</div>
+
+
+<div class="d__flex d__flex--justify-between w__342">
+  <span class="text text__main-light opacity__5 text__small">מחיר מלא</span>
+
+  <div class="price-disabled">
+    <span class="text text__main-light opacity__5 m__right__3 text__xx-small">₪</span>
+    <span class="text text__main-light opacity__5 text__line-through text__number">167</span>
+  </div>
+</div>
+
+<div class="d__flex d__flex--justify-between w__342">
+  <span class="text text__active text__small">בקנייה זו חסכת</span>
+
+  <div class="price-disabled">
+    <span class="text text__active m__right__3 text__xx-small">₪</span>
+    <span class="text text__active text__number">20</span>
+  </div>
+</div>
+
+<div class="separator w__342"></div>
+
+<div class="d__flex d__flex--justify-between w__342 m__bottom--14">
+  <span class="text text__main-light text__medium">מחיר סופי</span>
+
+  <div class="price-disabled">
+    <span class="text text__main-light m__right__3 text__xx-small">₪</span>
+    <span class="text text__main-light text__number">147</span>
+  </div>
+</div>
+
+<button class="active w__100">
+  <span class="text text__main-light text__small text__shadow">ההזמנה אישור והמשך</span>
+</button>
