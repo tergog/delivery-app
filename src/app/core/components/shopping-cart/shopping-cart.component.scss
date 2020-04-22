@@ -10,7 +10,15 @@
   height: 806px;
   background-color: $secondary-color;
   border-radius: 35px;
-  padding: 24px 15px 17px 15px;
+  padding: 20px 15px 17px 15px;
+
+  &.empty {
+    height: 515px;
+
+    .separator {
+      margin-bottom: 27px;
+    }
+  }
 }
 
 .shopping-item-disabled {
@@ -46,8 +54,20 @@
 
 .separator {
   height: 1px;
-  background-color: $separator-color;
+  background-color: $main-color-dark;
   opacity: 0.3;
-  margin-top: 13px;
   margin-bottom: 11px;
 }
+
+.image-wrap {
+  margin-top: 9px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+  :host {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+

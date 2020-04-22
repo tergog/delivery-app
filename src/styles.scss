@@ -24,6 +24,10 @@ body {
     color: $main-text-color;
   }
 
+  &__main-dark {
+    color: $main-color-dark;
+  }
+
   &__line-through {
     text-decoration: line-through;
   }
@@ -42,6 +46,12 @@ body {
 
   &__active {
     color: $active-color-main;
+  }
+
+  &__nowrap {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   &__number {
@@ -135,6 +145,10 @@ button {
 }
 
 .d {
+  &__block {
+    display: block;
+  }
+
   &__flex {
     display: flex;
 
@@ -160,6 +174,10 @@ button {
 
     &--items-center {
       align-items: center;
+    }
+
+    &--items-baseline {
+      align-items: baseline;
     }
   }
 }

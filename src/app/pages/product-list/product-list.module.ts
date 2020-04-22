@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { ProductListComponent } from './product-list.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 const routes = [
   {
@@ -13,7 +14,8 @@ const routes = [
 
 @NgModule({
   declarations: [
-    ProductListComponent
+    ProductListComponent,
+    ProductCardComponent
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,4 @@
-<div class="d__flex d__flex--justify-between d__flex--items-center w__100 m__bottom--25">
+<div class="d__flex d__flex--justify-between d__flex--items-center w__100 m__bottom--18">
   <span class="text text__medium text__main-light p__right--14">ההזמנה שלך</span>
 
   <div class="d__flex d__flex--column p__left--14">
@@ -9,38 +9,47 @@
 
 <app-radio-group class="d__flex m__bottom--30"></app-radio-group>
 
-<app-shopping-item class="m__bottom--10" *ngFor="let item of shoppingItems" [shoppingItem]="item"></app-shopping-item>
+<ng-container *ngIf="shoppingItems?.length else noItems">
+  <app-shopping-item class="m__bottom--10" *ngFor="let item of shoppingItems" [shoppingItem]="item"></app-shopping-item>
 
-<div class="shopping-item-disabled">
-  <div class="shopping-item-description">
-    <span class="text text__xx-small text__secondary">שליחות</span>
+  <div class="shopping-item-disabled">
+    <div class="shopping-item-description">
+      <span class="text text__xx-small text__secondary">שליחות</span>
+    </div>
+
+    <div class="price-disabled">
+      <div class="background-opacity"></div>
+      <span class="text text__secondary m__right__3 text__xx-small pos__relative">₪</span>
+      <span class="text text__secondary text__number pos__relative">20</span>
+    </div>
   </div>
 
-  <div class="price-disabled">
-    <div class="background-opacity"></div>
-    <span class="text text__secondary m__right__3 text__xx-small pos__relative">₪</span>
-    <span class="text text__secondary text__number pos__relative">20</span>
+
+  <div class="d__flex d__flex--justify-between w__342">
+    <span class="text text__main-light opacity__5 text__small">מחיר מלא</span>
+
+    <div class="price-disabled">
+      <span class="text text__main-light opacity__5 m__right__3 text__xx-small">₪</span>
+      <span class="text text__main-light opacity__5 text__line-through text__number">167</span>
+    </div>
   </div>
-</div>
 
+  <div class="d__flex d__flex--justify-between w__342">
+    <span class="text text__active text__small">בקנייה זו חסכת</span>
 
-<div class="d__flex d__flex--justify-between w__342">
-  <span class="text text__main-light opacity__5 text__small">מחיר מלא</span>
-
-  <div class="price-disabled">
-    <span class="text text__main-light opacity__5 m__right__3 text__xx-small">₪</span>
-    <span class="text text__main-light opacity__5 text__line-through text__number">167</span>
+    <div class="price-disabled m__bottom--13">
+      <span class="text text__active m__right__3 text__xx-small">₪</span>
+      <span class="text text__active text__number">20</span>
+    </div>
   </div>
-</div>
+</ng-container>
 
-<div class="d__flex d__flex--justify-between w__342">
-  <span class="text text__active text__small">בקנייה זו חסכת</span>
-
-  <div class="price-disabled">
-    <span class="text text__active m__right__3 text__xx-small">₪</span>
-    <span class="text text__active text__number">20</span>
+<ng-template #noItems>
+  <div class="d__flex d__flex--column d__flex--justify-between m__bottom--30">
+    <img class="image-wrap" src="/assets/images/icons/shopping-bag-empty.svg" alt="">
+    <span class="text text__small text__active">ההזמנה שלך רעבה</span>
   </div>
-</div>
+</ng-template>
 
 <div class="separator w__342"></div>
 
@@ -53,6 +62,6 @@
   </div>
 </div>
 
-<button class="active w__100">
+<button class="active w__100" *ngIf="shoppingItems?.length">
   <span class="text text__main-light text__small text__shadow">ההזמנה אישור והמשך</span>
 </button>

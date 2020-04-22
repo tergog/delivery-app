@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-cart.component.scss']
 })
 export class ShoppingCartComponent implements OnInit {
+  @HostBinding('class.empty') public isEmpty: boolean;
 
   public shoppingItems = [
     {
@@ -41,6 +42,7 @@ export class ShoppingCartComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.isEmpty = this.shoppingItems.length === 0;
   }
 
 }
