@@ -14,13 +14,15 @@ export class ProductListComponent implements OnInit {
 
   public productCategories: ProductCategoryModel[] = productCategories;
   public products: ProductModel[] = products;
+  public visibleCategory: number;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  public event($event, number): void {
-    console.log($event, number);
+  public onInViewportChange(id: number, category): void {
+    console.log(id, category)
+    this.visibleCategory = id;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { ProductCategoryModel } from '../models/product-category.model';
 import { productCategories } from '../data/categories.data';
@@ -11,7 +11,7 @@ import { productCategories } from '../data/categories.data';
 export class ProductCategoriesComponent implements OnInit {
 
   public productCategories: ProductCategoryModel[] = productCategories;
-  public selectedCategory = 4;
+  @Input() public visibleCategory: number;
 
   constructor() { }
 

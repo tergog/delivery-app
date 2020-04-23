@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
 
 import { ProductListComponent } from './product-list.component';
 import { ProductCardComponent } from './product-card/product-card.component';
@@ -23,7 +24,8 @@ const routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    InViewportModule
   ],
   providers: [
     CategoryPipe

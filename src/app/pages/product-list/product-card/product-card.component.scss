@@ -10,6 +10,10 @@
   margin: 0 10px;
 }
 
+.product-image {
+  border-radius: 25px 25px 0 0;
+}
+
 .separator {
   height: 2px;
   background-color: $main-color-light;
@@ -45,7 +49,17 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+.product-title {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.product-description {
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px) {
   :host {
     display: flex;
     width: 385px;
@@ -55,5 +69,19 @@
   .product-image {
     width: 130px;
     height: 130px;
+    border-radius: 0 25px 25px 0;
+  }
+
+  .product-description-padding {
+    padding: 22px 23px 17px 18px;
+  }
+
+  .product-description {
+    margin-bottom: 23px;
+  }
+
+  .product-title {
+    width: 200px;
+    margin-bottom: 5px;
   }
 }

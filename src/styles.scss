@@ -49,6 +49,10 @@ body {
     color: $active-color-main;
   }
 
+  &__active-secondary {
+    color: $active-color-secondary;
+  }
+
   &__nowrap {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -172,8 +176,8 @@ button {
     &--justify-center {
       justify-content: center;
 
-      @media only screen and (max-width: 600px) {
-        &--xs {
+      @media only screen and (max-width: 800px) {
+        &--s {
           justify-content: center;
         }
       }
@@ -185,6 +189,14 @@ button {
 
     &--items-baseline {
       align-items: baseline;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    &__none {
+      &--s {
+        display: none !important;
+      }
     }
   }
 
