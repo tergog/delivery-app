@@ -1,6 +1,10 @@
 .m {
   &__left {
 
+    &--5 {
+      margin-left: 5px;
+    }
+
     &--9 {
       margin-left: 9px;
     }
@@ -34,6 +38,14 @@
     &__3 {
       margin-right: 3px;
     }
+
+    &__11 {
+      margin-right: 11px;
+    }
+
+    &__200 {
+      margin-right: 200px;
+    }
   }
 
   &__bottom {
@@ -58,7 +70,7 @@
     }
 
     &--15 {
-      margin-bottom: 15px;
+      margin-bottom: 15px !important;
     }
 
     &--18 {
@@ -79,6 +91,10 @@
 
     &--38 {
       margin-bottom: 38px;
+    }
+
+    &--42 {
+      margin-bottom: 42px;
     }
   }
 }

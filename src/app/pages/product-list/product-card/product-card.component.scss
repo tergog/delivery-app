@@ -1,11 +1,13 @@
 @import "src/assets/scss/variables";
 
 :host {
+  display: block;
   width: 285px;
   height: 390px;
   background-color: $main-bg-color;
   box-shadow: 5px 5px 5px rgba(143, 151, 162, 0.1);
   border-radius: 25px;
+  margin: 0 10px;
 }
 
 .separator {
@@ -37,4 +39,8 @@
   border-radius: 10px;
   background-color: $success-color;
   padding: 2px 10px;
+
+  &.discount-product {
+    background-color: $warning-color;
+  }
 }

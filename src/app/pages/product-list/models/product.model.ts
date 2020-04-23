@@ -4,6 +4,9 @@ export class ProductModel {
   title: string;
   description1: string;
   description2: string;
-  price: number;
+  newPrice: number;
+  oldPrice: number;
   specification: string[];
+  isNew: boolean;
+  category: number;
 }

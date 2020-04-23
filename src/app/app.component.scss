@@ -4,7 +4,8 @@
   display: block;
   position: relative;
   width: 100%;
-  min-height: calc(1200px - 200px);
+  height: calc(100% - 200px);
+  min-height: calc(100vh + 100px);
   background-image: url(src/assets/images/main-background.png);
 
   &:after {

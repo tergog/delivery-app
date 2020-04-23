@@ -1,7 +1,7 @@
 <div class="pos__relative">
   <img src="{{ product.image }}" alt="">
-  <div class="product-type">
-    <span class="text text__small text__main-light">חדש</span>
+  <div class="product-type" [class.discount-product]="product.oldPrice">
+    <span class="text text__small text__main-light">{{ product.oldPrice ? 'מבצע' : 'חדש' }}</span>
   </div>
 </div>
 
@@ -12,7 +12,7 @@
 
   <span class="d__block opacity__5 text text__main text__alef m__bottom--5">{{ product.description1 }}</span>
 
-  <span class="d__block text text__main text__alef text__nowrap opacity__5 m__bottom--30">{{ product.description2 }}</span>
+  <span class="d__block text text__main text__alef text__nowrap opacity__5 m__bottom--42">{{ product.description2 }}</span>
 
   <div class="d__flex d__flex--justify-between">
     <div class="d__flex">
@@ -20,8 +20,15 @@
     </div>
 
     <div class="d__flex d__flex--items-baseline">
-      <span class="text text__secondary text__number">{{ product.price }}</span>
-      <span class="text text__secondary m__right__3 text__xx-small">₪</span>
+      <ng-container *ngIf="product.oldPrice">
+        <span class="text text__main text__number text__line-through opacity__5">{{ product.oldPrice }}</span>
+        <span class="text text__main m__right__3 text__xx-small m__left--5 opacity__5">₪</span>
+      </ng-container>
+
+      <ng-container>
+        <span class="text text__secondary text__number" [class.text__active]="product.oldPrice">{{ product.newPrice }}</span>
+        <span class="text text__secondary m__right__3 text__xx-small" [class.text__active]="product.oldPrice">₪</span>
+      </ng-container>
     </div>
   </div>
 </div>

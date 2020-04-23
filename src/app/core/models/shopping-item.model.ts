@@ -4,4 +4,5 @@ export class ShoppingItemModel {
   oldPrice: number;
   newPrice: number;
   quantity: number;
+  category: number;
 }

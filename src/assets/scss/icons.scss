@@ -33,4 +33,14 @@
   width: 15px;
   height: 15px;
   background: url(src/assets/images/icons/arrow-down.svg) center center no-repeat;
+
+  &.selected {
+    background: url(src/assets/images/icons/arrow-down-selected.svg) center center no-repeat;
+  }
+}
+
+.arrow-left {
+  width: 15px;
+  height: 15px;
+  background: url(src/assets/images/icons/arrow-left-active.svg) center center no-repeat;
 }

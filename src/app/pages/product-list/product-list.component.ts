@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import { ProductModel } from './models/product.model';
+import { ProductCategoryModel } from './models/product-category.model';
+import { productCategories } from './data/categories.data';
+import { products } from './data/products.data';
 
 @Component({
   selector: 'app-product-list',
@@ -8,21 +11,16 @@ import { ProductModel } from './models/product.model';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
-  public products: ProductModel[] = [
-    {
-      id: 1,
-      image: 'assets/images/garlic-prawn.png',
-      title: 'פיצה משפחתית טבעונית L',
-      description1: 'פיצה משפחתית טבעונית',
-      description2: '+ תוספת + מאפה זיוה',
-      price: 40,
-      specification: ['vegetarian', 'spicy']
-    }
-  ];
+
+  public productCategories: ProductCategoryModel[] = productCategories;
+  public products: ProductModel[] = products;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  public event($event, number): void {
+    console.log($event, number);
+  }
 }
