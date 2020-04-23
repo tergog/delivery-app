@@ -1,6 +1,6 @@
 <div class="pos__relative">
-  <img src="{{ product.image }}" alt="">
-  <div class="product-type" [class.discount-product]="product.oldPrice">
+  <img class="product-image" src="{{ product.image }}" alt="">
+  <div class="product-type d__none--xs" [class.discount-product]="product.oldPrice">
     <span class="text text__small text__main-light">{{ product.oldPrice ? 'מבצע' : 'חדש' }}</span>
   </div>
 </div>

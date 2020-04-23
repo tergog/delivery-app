@@ -30,3 +30,14 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  :host {
+    top: 100px;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+}

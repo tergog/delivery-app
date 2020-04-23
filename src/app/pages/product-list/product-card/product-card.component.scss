@@ -44,3 +44,16 @@
     background-color: $warning-color;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  :host {
+    display: flex;
+    width: 385px;
+    height: 130px;
+  }
+
+  .product-image {
+    width: 130px;
+    height: 130px;
+  }
+}

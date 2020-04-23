@@ -171,6 +171,12 @@ button {
 
     &--justify-center {
       justify-content: center;
+
+      @media only screen and (max-width: 600px) {
+        &--xs {
+          justify-content: center;
+        }
+      }
     }
 
     &--items-center {
@@ -179,6 +185,14 @@ button {
 
     &--items-baseline {
       align-items: baseline;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    &__none {
+      &--xs {
+        display: none !important;
+      }
     }
   }
 }
