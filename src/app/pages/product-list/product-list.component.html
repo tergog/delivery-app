@@ -1,5 +1,8 @@
 <ng-container *ngFor="let category of productCategories">
-  <span class="text text__title text__main-dark m__bottom--15">{{ category.name }}</span>
+  <span class="text text__title text__main-dark m__bottom--15"
+        snInViewport
+        [inViewportOptions]=" { threshold: 1 }"
+        (inViewportChange)="inViewport($event, category)">{{ category.name }}</span>
   <div class="w__100 d__flex d__flex__wrap m__bottom--15 d__flex--justify-center--s">
     <app-product-card class="m__bottom--15" *ngFor="let product of products | category:category.id" [product]="product"></app-product-card>
   </div>

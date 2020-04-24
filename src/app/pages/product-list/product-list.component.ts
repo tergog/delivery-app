@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { ProductModel } from './models/product.model';
 import { ProductCategoryModel } from './models/product-category.model';
@@ -21,8 +21,9 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
   }
 
-  public onInViewportChange(id: number, category): void {
-    console.log(id, category)
-    this.visibleCategory = id;
+  public inViewport(isInViewport: boolean, category: ProductCategoryModel): void {
+    if (isInViewport) {
+      this.visibleCategory = category.id;
+    }
   }
 }

@@ -8,6 +8,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
 import { CategoryPipe } from './pipes/category.pipe';
 
+
 const routes = [
   {
     path: '',

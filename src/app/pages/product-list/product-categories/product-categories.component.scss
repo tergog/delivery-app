@@ -41,8 +41,22 @@
     overflow-x: auto;
   }
 
+  .product-category {
+    &.active {
+      background: none;
+
+      .category-name {
+        color: $main-text-color
+      }
+    }
+  }
+
   .text__main-light {
     color: $active-color-secondary;
+  }
+
+  .arrow-down.selected {
+    background: url(src/assets/images/icons/arrow-left-grey.svg) center center no-repeat;
   }
 
   .arrow-left {

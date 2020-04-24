@@ -1,11 +1,11 @@
 <ng-container *ngFor="let category of productCategories">
   <div class="product-category" [class.active]="visibleCategory === category.id">
-    <i class="arrow-down selected" *ngIf="visibleCategory === category.id else arrowDown"></i>
-    <ng-template #arrowDown>
+    <i class="arrow-down selected" *ngIf="visibleCategory === category.id else arrowLeft"></i>
+    <ng-template #arrowLeft>
       <i class="arrow-left active"></i>
     </ng-template>
 
-    <span class="text text__main-light text__medium m__right__11">{{ category.name }}</span>
+    <span class="text text__main-light text__medium m__right__11 category-name">{{ category.name }}</span>
   </div>
 
   <div class="separator" [class.active]="visibleCategory === category.id"></div>
