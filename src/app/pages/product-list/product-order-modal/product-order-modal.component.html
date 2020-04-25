@@ -1,0 +1,75 @@
+<app-circle-icon class="modal-close" [type]="'close'"></app-circle-icon>
+
+<div class="d__flex m__bottom--50">
+  <div class="pos__relative">
+    <img class="product-img" src="{{ data.product.image }}" alt="">
+    <div class="product-type d__none--s" [class.discount-product]="data.product.oldPrice">
+      <span class="text text__small text__main-light">{{ data.product.oldPrice ? 'מבצע' : 'חדש' }}</span>
+    </div>
+  </div>
+
+  <div class="m__right__45">
+    <span class="d__block text text__secondary text__title-modal m__bottom--15">
+    פיצה משפחתית טבעונית <br>
+     + תוספת
+    </span>
+
+    <div class="separator m__bottom--15"></div>
+
+    <span class="d__block text text__main text__alef text__small opacity__7 m__bottom--15">
+      זיתי קלמטה, עגבניות שרי, גבינה בולגרית, קשיו, ומלפפון חמוץ <br>
+      קלמטה, עגבניות שרי, גבינה בולגרית, קשיו, ומלפפון חמוץ, בצל,
+    </span>
+
+    <div class="d__flex d__flex--items-end d__flex--justify-between">
+      <div>
+        <span class="d__block text text__small text__main m__bottom--5">כמות</span>
+        <div class="d__flex">
+          <app-circle-icon [type]="'minus-lg'"></app-circle-icon>
+          <span class="text text__secondary text__number-lg m__left--12 m__right__12">2</span>
+          <app-circle-icon [type]="'plus-lg'"></app-circle-icon>
+        </div>
+      </div>
+      <div>
+        <span class="d__block text text__small text__main m__bottom--5">מחיר</span>
+        <div class="d__flex d__flex--items-baseline">
+          <ng-container *ngIf="data.product.oldPrice">
+            <span class="text text__main text__number-lg text__line-through opacity__5">{{ data.product.oldPrice }}</span>
+            <span class="text text__main m__right__3 text__medium m__left--5 opacity__5 m__left--10">₪</span>
+          </ng-container>
+
+          <ng-container>
+            <span class="text text__number-lg text__secondary" [class.text__active-secondary]="data.product.oldPrice">{{ data.product.newPrice }}</span>
+            <span class="text text__secondary m__right__3 text__medium" [class.text__active-secondary]="data.product.oldPrice">₪</span>
+          </ng-container>
+        </div>
+      </div>
+      <div class="d__flex">
+        <img class="specification" *ngFor="let image of data.product.specification" src="assets/images/icons/{{ image }}.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-product-options class="m__bottom--30"></app-product-options>
+
+<div class="w__590 d__flex d__flex--justify-between d__flex--items-baseline">
+  <span class="text text__medium text__secondary">הנמל ריחמ כ"הס</span>
+
+  <div class="d__flex d__flex--items-baseline m__bottom--20">
+    <ng-container *ngIf="data.product.oldPrice">
+      <span class="text text__main text__number-lg text__line-through opacity__5">{{ data.product.oldPrice }}</span>
+      <span class="text text__main m__right__3 text__medium m__left--5 opacity__5 m__left--10">₪</span>
+    </ng-container>
+
+    <ng-container>
+      <span class="text text__number-lg text__secondary" [class.text__active-secondary]="data.product.oldPrice">{{ data.product.newPrice }}</span>
+      <span class="text text__secondary m__right__3 text__medium" [class.text__active-secondary]="data.product.oldPrice">₪</span>
+    </ng-container>
+  </div>
+</div>
+
+<button class="active w__590">
+  <span class="text text__main-light text__small text__shadow">הוסף לעגלה</span>
+</button>
+

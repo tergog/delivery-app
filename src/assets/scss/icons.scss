@@ -39,6 +39,24 @@
   }
 }
 
+.close {
+  width: 26px;
+  height: 26px;
+  background: url(src/assets/images/icons/close.svg) center center no-repeat;
+}
+
+.plus-lg {
+  width: 26px;
+  height: 26px;
+  background: url(src/assets/images/icons/plus-lg.svg) center center no-repeat;
+}
+
+.minus-lg {
+  width: 26px;
+  height: 26px;
+  background: url(src/assets/images/icons/minus-lg.svg) center center no-repeat;
+}
+
 .arrow-left {
   width: 15px;
   height: 15px;

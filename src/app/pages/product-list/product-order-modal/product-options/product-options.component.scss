@@ -1,0 +1,24 @@
+@import "src/assets/scss/variables";
+
+:host {
+  width: 100%;
+}
+
+.product-options {
+  background-color: $main-bg-color;
+  box-shadow: 5px 5px 5px rgba(143, 151, 162, 0.1);
+  border-radius: 25px;
+  padding: 29px 51px 45px;
+  display: flex;
+}
+
+.product-options-title {
+  min-width: 183px;
+}
+
+.product-option-wrap {
+  &:nth-of-type(4n) {
+    margin-left: 0;
+  }
+}
+

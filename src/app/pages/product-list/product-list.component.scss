@@ -11,6 +11,10 @@
   margin-right: 200px;
 }
 
+app-product-card {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
   :host {
     display: flex;

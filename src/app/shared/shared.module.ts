@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { CircleIconComponent } from './components/circle-icon/circle-icon.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -9,6 +10,8 @@ import { SelectComponent } from './components/select/select.component';
 import { RadioGroupSmallComponent } from './components/radio-group-small/radio-group-small.component';
 import { RadioButtonSmallComponent } from './components/radio-group-small/radio-button-small/radio-button-small.component';
 import { InputComponent } from './components/input/input.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { InputComponent } from './components/input/input.component';
     SelectComponent,
     RadioGroupSmallComponent,
     RadioButtonSmallComponent,
-    InputComponent
+    InputComponent,
+    TextareaComponent,
+    SlideToggleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatSlideToggleModule
   ],
   exports: [
     CircleIconComponent,
@@ -31,7 +37,9 @@ import { InputComponent } from './components/input/input.component';
     RadioButtonComponent,
     SelectComponent,
     RadioGroupSmallComponent,
-    InputComponent
+    InputComponent,
+    TextareaComponent,
+    SlideToggleComponent
   ],
   entryComponents: [
     CircleIconComponent,
