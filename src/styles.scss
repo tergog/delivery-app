@@ -178,6 +178,12 @@ button {
 
     &__wrap {
       flex-wrap: wrap;
+
+      @media only screen and (max-width: 600px) {
+        &--xs {
+          flex-wrap: wrap;
+        }
+      }
     }
 
     &--column {
@@ -233,4 +239,12 @@ button {
   background-color: $main-color-light !important;
   box-shadow: 3px 5px 10px rgba(89, 98, 112, 0.5) !important;
   border-radius: 25px !important;
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .mat-dialog-container {
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
 }

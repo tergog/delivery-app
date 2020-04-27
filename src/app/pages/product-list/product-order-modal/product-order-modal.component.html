@@ -1,14 +1,14 @@
 <app-circle-icon class="modal-close" [type]="'close'"></app-circle-icon>
 
-<div class="d__flex m__bottom--50">
+<div class="d__flex d__flex--items-center m__bottom--50 product-description-header">
   <div class="pos__relative">
     <img class="product-img" src="{{ data.product.image }}" alt="">
-    <div class="product-type d__none--s" [class.discount-product]="data.product.oldPrice">
+    <div class="product-type" [class.discount-product]="data.product.oldPrice">
       <span class="text text__small text__main-light">{{ data.product.oldPrice ? 'מבצע' : 'חדש' }}</span>
     </div>
   </div>
 
-  <div class="m__right__45">
+  <div class="product-description">
     <span class="d__block text text__secondary text__title-modal m__bottom--15">
     פיצה משפחתית טבעונית <br>
      + תוספת
@@ -17,11 +17,11 @@
     <div class="separator m__bottom--15"></div>
 
     <span class="d__block text text__main text__alef text__small opacity__7 m__bottom--15">
-      זיתי קלמטה, עגבניות שרי, גבינה בולגרית, קשיו, ומלפפון חמוץ <br>
+      זיתי קלמטה, עגבניות שרי, גבינה בולגרית, קשיו, ומלפפון חמוץ
       קלמטה, עגבניות שרי, גבינה בולגרית, קשיו, ומלפפון חמוץ, בצל,
     </span>
 
-    <div class="d__flex d__flex--items-end d__flex--justify-between">
+    <div class="d__flex d__flex--items-end d__flex--justify-between d__flex__wrap--xs">
       <div>
         <span class="d__block text text__small text__main m__bottom--5">כמות</span>
         <div class="d__flex">
@@ -53,7 +53,7 @@
 
 <app-product-options class="m__bottom--30"></app-product-options>
 
-<div class="w__590 d__flex d__flex--justify-between d__flex--items-baseline">
+<div class="product-summary d__flex d__flex--justify-between d__flex--items-baseline">
   <span class="text text__medium text__secondary">הנמל ריחמ כ"הס</span>
 
   <div class="d__flex d__flex--items-baseline m__bottom--20">
@@ -69,7 +69,7 @@
   </div>
 </div>
 
-<button class="active w__590">
+<button class="active">
   <span class="text text__main-light text__small text__shadow">הוסף לעגלה</span>
 </button>
 
