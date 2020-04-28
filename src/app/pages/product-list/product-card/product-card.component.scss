@@ -85,3 +85,9 @@
     margin-bottom: 5px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .product-description-padding {
+    padding: 22px 18px 17px 13px;
+  }
+}

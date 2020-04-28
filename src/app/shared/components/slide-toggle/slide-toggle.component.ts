@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slide-toggle',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slide-toggle.component.scss']
 })
 export class SlideToggleComponent implements OnInit {
+
+  @Input() selected: boolean;
 
   constructor() { }
 

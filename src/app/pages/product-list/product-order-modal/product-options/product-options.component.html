@@ -119,41 +119,65 @@
       <app-select [text]="'תירס'"></app-select>
     </div>
 
-    <div>
-      <div class="product-option-wrap d__flex--inline d__flex--column m__bottom--20">
+    <div class="product-select-wrap d__flex d__flex--justify-between d__flex__wrap">
+      <div class="d__flex--inline d__flex--column m__bottom--20">
         <span class="text text__small text__secondary m__bottom--5">ןוחט רשב</span>
-        <app-slide-toggle></app-slide-toggle>
+        <div class="d__flex d__flex--items-center">
+          <app-slide-toggle [selected]="true"></app-slide-toggle>
+          <div class="d__flex d__flex--items-baseline">
+            <span class="text text__medium text__secondary">5</span>
+            <span class="text text__secondary m__right__3 text__small">₪</span>
+          </div>
+        </div>
       </div>
 
-      <div class="product-option-wrap d__flex--inline d__flex--column m__bottom--20">
+      <div class="d__flex--inline d__flex--column m__bottom--20">
         <span class="text text__small text__secondary m__bottom--5">ןוחט רשב</span>
-        <app-slide-toggle></app-slide-toggle>
+        <div class="d__flex d__flex--items-center">
+          <app-slide-toggle></app-slide-toggle>
+          <div class="d__flex d__flex--items-baseline">
+            <span class="text text__medium text__main">5</span>
+            <span class="text text__main m__right__3 text__small">₪</span>
+          </div>
+        </div>
       </div>
 
-      <div class="product-option-wrap d__flex--inline d__flex--column m__bottom--20">
+      <div class="d__flex--inline d__flex--column m__bottom--20">
         <span class="text text__small text__secondary m__bottom--5">ןוחט רשב</span>
-        <app-slide-toggle></app-slide-toggle>
+        <div class="d__flex d__flex--items-center">
+          <app-slide-toggle></app-slide-toggle>
+          <div class="d__flex d__flex--items-baseline">
+            <span class="text text__medium text__main">5</span>
+            <span class="text text__main m__right__3 text__small">₪</span>
+          </div>
+        </div>
       </div>
 
-      <div class="product-option-wrap d__flex--inline d__flex--column m__bottom--20">
+      <div class="d__flex--inline d__flex--column m__bottom--20">
         <span class="text text__small text__secondary m__bottom--5">ןוחט רשב</span>
-        <app-slide-toggle></app-slide-toggle>
+        <div class="d__flex d__flex--items-center">
+          <app-slide-toggle></app-slide-toggle>
+          <div class="d__flex d__flex--items-baseline">
+            <span class="text text__medium text__main">5</span>
+            <span class="text text__main m__right__3 text__small">₪</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="product-options d__flex d__flex--column m__bottom--20">
-  <div class="d__flex d__flex--items-center m__bottom--25">
+  <div class="product-options-input d__flex d__flex--items-center d__flex--column--xs d__flex--items-start--xs m__bottom--25">
     <div class="product-options-title">
       <span class="text text__secondary text__medium">שם</span><br>
       <span class="text text__main text__alef text__x-small opacity__5">עבור מי המנה?</span>
     </div>
 
-    <app-input class="w__383" [placeholder]="'הוסף את שמך כאן'"></app-input>
+    <app-input [placeholder]="'הוסף את שמך כאן'"></app-input>
   </div>
 
-  <div class="d__flex d__flex--items-center">
+  <div class="product-options-textarea d__flex d__flex--items-center d__flex--items-start--xs d__flex--column--xs">
     <div class="product-options-title">
       <span class="text text__secondary text__medium">הערות</span><br>
       <span class="text text__main text__alef text__x-small opacity__5">רוצה להגיד</span><br>

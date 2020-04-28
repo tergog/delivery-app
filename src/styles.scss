@@ -1,7 +1,8 @@
-@import "src/assets/scss/icons";
 @import "src/assets/scss/variables";
+@import "src/assets/scss/icons";
 @import "src/assets/scss/fonts";
 @import "src/assets/scss/spacing";
+@import "src/assets/scss/custom-mat-dialog";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
@@ -167,6 +168,12 @@ button {
 .d {
   &__block {
     display: block;
+
+    @media only screen and (max-width: 450px) {
+      &--xxs {
+        display: block !important;
+      }
+    }
   }
 
   &__flex {
@@ -188,6 +195,12 @@ button {
 
     &--column {
       flex-direction: column;
+
+      @media only screen and (max-width: 600px) {
+        &--xs {
+          flex-direction: column;
+        }
+      }
     }
 
     &--justify-between {
@@ -212,39 +225,40 @@ button {
       align-items: flex-end;
     }
 
+    &--items-start {
+      align-items: flex-start;
+
+      @media only screen and (max-width: 600px) {
+        &--xs {
+          align-items: flex-start;
+        }
+      }
+    }
+
     &--items-baseline {
       align-items: baseline;
     }
   }
 
-  @media only screen and (max-width: 800px) {
-    &__none {
+  &__none {
+    display: none;
+
+    @media only screen and (max-width: 800px) {
       &--s {
         display: none !important;
       }
     }
-  }
 
-  @media only screen and (max-width: 600px) {
-    &__none {
+    @media only screen and (max-width: 600px) {
       &--xs {
         display: none !important;
       }
     }
-  }
-}
 
-.mat-dialog-container {
-  position: relative !important;
-  background-color: $main-color-light !important;
-  box-shadow: 3px 5px 10px rgba(89, 98, 112, 0.5) !important;
-  border-radius: 25px !important;
-  padding: 0 !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .mat-dialog-container {
-    padding: 0 !important;
-    border-radius: 0 !important;
+    @media only screen and (max-width: 450px) {
+      &--xxs {
+        display: none !important;
+      }
+    }
   }
 }

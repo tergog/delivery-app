@@ -103,6 +103,11 @@ button.active {
     width: 100%;
   }
 
+  .product-img {
+    width: 100%;
+    height: auto;
+  }
+
   :host {
     padding-left: 0;
     padding-right: 0;
@@ -115,7 +120,7 @@ button.active {
   }
 
   button.active {
-    width: 100%;
+    width: 276px;
   }
 }
 

@@ -22,7 +22,7 @@
     </span>
 
     <div class="d__flex d__flex--items-end d__flex--justify-between d__flex__wrap--xs">
-      <div>
+      <div class="d__none--xxs">
         <span class="d__block text text__small text__main m__bottom--5">כמות</span>
         <div class="d__flex">
           <app-circle-icon [type]="'minus-lg'"></app-circle-icon>
@@ -46,6 +46,14 @@
       </div>
       <div class="d__flex">
         <img class="specification" *ngFor="let image of data.product.specification" src="assets/images/icons/{{ image }}.svg" alt="">
+      </div>
+      <div class="d__none d__block--xxs">
+        <span class="d__block text text__small text__main m__bottom--5">כמות</span>
+        <div class="d__flex">
+          <app-circle-icon [type]="'minus-lg'"></app-circle-icon>
+          <span class="text text__secondary text__number-lg m__left--12 m__right__12">2</span>
+          <app-circle-icon [type]="'plus-lg'"></app-circle-icon>
+        </div>
       </div>
     </div>
   </div>

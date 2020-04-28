@@ -17,12 +17,24 @@
   margin-left: 20px;
 }
 
+.product-options-input {
+  width: 383px;
+}
+
+.product-options-textarea {
+  width: 590px;
+}
+
 .product-option-wrap {
   margin-left: 20px;
 
   &:nth-of-type(4n) {
     margin-left: 0;
   }
+}
+
+.product-select-wrap {
+  margin-left: 57px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -74,6 +86,14 @@
       margin-left: 20px;
     }
   }
+
+  .product-select-wrap {
+    margin-left: 0;
+  }
+
+  .product-options-textarea {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -93,6 +113,10 @@
   .product-options {
     margin-bottom: 4px;
     border-radius: 0;
+  }
+
+  .product-options-input {
+    width: 100%;
   }
 }
 
