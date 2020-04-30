@@ -1,0 +1,25 @@
+@import "src/assets/scss/variables";
+
+:host {
+  width: 998px;
+  background: $main-bg-color;
+  box-shadow: 3px 5px 10px rgba(89, 98, 112, 0.5);
+  border-radius: 25px;
+  padding: 76px 103px 50px 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+  :host {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :host {
+    padding: 22px 20px 30px 21px;
+  }
+
+  button.active {
+    width: 284px;
+  }
+}

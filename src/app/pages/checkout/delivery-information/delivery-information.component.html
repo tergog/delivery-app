@@ -1,0 +1,75 @@
+<div class="d__flex d__flex--justify-between d__flex--justify-center--xs m__bottom--35">
+  <div class="d__flex d__flex--column d__flex--items-center--xs">
+    <span class="text text__title-section text__secondary">ההזמנה שלך</span>
+    <span class="text text__x-small text__main opacity__5 text__alef">כל השדות הם חובה</span>
+  </div>
+
+  <div class="d__flex d__none--xs">
+    <span class="action-button warning m__left--10">
+      <img src="assets/images/icons/shevron-right.svg" alt="">
+    </span>
+    <span class="text text__small text__active-secondary text__alef">רוזח</span>
+  </div>
+</div>
+
+<div class="d__flex d__flex__wrap d__flex--justify-between m__bottom--30">
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">אלמ םש</span>
+    <app-input [placeholder]="'בחר\\י'"></app-input>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">טלפון</span>
+    <app-input [placeholder]="'בחר\\י'"></app-input>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">רחוב</span>
+    <app-input [placeholder]="'בחר\\י'"></app-input>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">עיר</span>
+    <app-input [placeholder]="'בחר\\י'"></app-input>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">מס' בית</span>
+    <app-input [placeholder]="'בחר\\י'"></app-input>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">הריד 'סמ</span>
+    <app-input [placeholder]="'בחר\\י'"></app-input>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">מס' סועדים</span>
+
+    <div class="d__flex">
+      <app-circle-icon [type]="'minus-lg'"></app-circle-icon>
+      <span class="text text__secondary text__number-lg m__left--12 m__right__12">2</span>
+      <app-circle-icon [type]="'plus-lg'"></app-circle-icon>
+    </div>
+  </div>
+
+  <div class="d__flex d__flex--column w__386 m__bottom--20">
+    <span class="text text__secondary text__small m__bottom--5">הוסף סכום חד פעמי</span>
+    <app-checkbox></app-checkbox>
+  </div>
+</div>
+
+<div class="d__flex d__flex--column m__bottom--36">
+  <div class="d__flex d__flex--column m__bottom--10">
+    <span class="text text__small text__secondary">ההזמנה שלך</span>
+    <span class="text text__x-small text__main opacity__5 text__alef">כל השדות הם חובה</span>
+  </div>
+
+  <app-textarea></app-textarea>
+</div>
+
+<div class="d__flex d__flex--justify-center">
+  <button class="active w__386">
+    <span class="text text__main-light text__small text__shadow">אישור והמשך הזמנה</span>
+  </button>
+</div>

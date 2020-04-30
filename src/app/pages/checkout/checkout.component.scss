@@ -1,0 +1,16 @@
+@import "src/assets/scss/variables";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 220px 72px 222px;
+  background-color: $main-color-light;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  :host {
+    padding: 40px 0 72px;
+  }
+}

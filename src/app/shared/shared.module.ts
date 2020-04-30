@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { CircleIconComponent } from './components/circle-icon/circle-icon.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -12,6 +13,8 @@ import { RadioButtonSmallComponent } from './components/radio-group-small/radio-
 import { InputComponent } from './components/input/input.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component';
+import { StepperComponent } from './components/stepper/stepper.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.com
     RadioButtonSmallComponent,
     InputComponent,
     TextareaComponent,
-    SlideToggleComponent
+    SlideToggleComponent,
+    StepperComponent,
+    CheckboxComponent
   ],
   imports: [
     CommonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatStepperModule
   ],
   exports: [
     CircleIconComponent,
@@ -39,7 +45,9 @@ import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.com
     RadioGroupSmallComponent,
     InputComponent,
     TextareaComponent,
-    SlideToggleComponent
+    SlideToggleComponent,
+    StepperComponent,
+    CheckboxComponent
   ],
   entryComponents: [
     CircleIconComponent,

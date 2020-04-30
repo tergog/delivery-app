@@ -1,12 +1,11 @@
 @import "src/assets/scss/variables";
 
 :host {
-  width: 90px;
+  width: 89px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  border: 2px solid $active-color-main;
 
   span {
     color: $active-color-secondary;

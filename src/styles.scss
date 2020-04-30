@@ -96,7 +96,7 @@ body {
     line-height: 87px;
   }
 
-  &__title-modal {
+  &__title-section {
     font-size: 50px;
     line-height: 50px;
   }
@@ -116,11 +116,28 @@ body {
   }
 }
 
+.action-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  &.success {
+    border: 2px solid $success-color;
+  }
+
+  &.warning {
+    border: 2px solid $warning-color;
+  }
+}
+
 .link {
   color: $active-color-main;
 }
 
-input {
+input[type='text'] {
   font-family: Alef;
   font-style: normal;
   font-weight: normal;
@@ -215,10 +232,21 @@ button {
           justify-content: center;
         }
       }
+      @media only screen and (max-width: 600px) {
+        &--xs {
+          justify-content: center;
+        }
+      }
     }
 
     &--items-center {
       align-items: center;
+
+      @media only screen and (max-width: 600px) {
+        &--xs {
+          align-items: center;
+        }
+      }
     }
 
     &--items-end {

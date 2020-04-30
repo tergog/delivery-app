@@ -3,15 +3,26 @@
 :host {
   width: 180px;
   height: 50px;
+
+  &.extended {
+    width: 360px;
+  }
+
+  border: 2px solid $active-color-main;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 app-radio-button-small {
+  border-right: 1px solid $active-color-main;
+  border-left: 1px solid $active-color-main;
+
   &:first-child {
-    border-radius: 0 25px 25px 0;
+    border-right: 0;
   }
 
   &:last-child {
-    border-radius: 25px 0 0 25px;
+    border-left: 0;
   }
 }
 

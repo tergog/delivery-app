@@ -1,2 +1,7 @@
 <app-radio-button-small [isActive]="true" [text]="'עכשיו'"></app-radio-button-small>
 <app-radio-button-small [isActive]="false" [text]="'היום'"></app-radio-button-small>
+<ng-container *ngIf="extended">
+  <app-radio-button-small [isActive]="false" [text]="'עכשיו'"></app-radio-button-small>
+  <app-radio-button-small [isActive]="false" [text]="'היום'"></app-radio-button-small>
+</ng-container>
+

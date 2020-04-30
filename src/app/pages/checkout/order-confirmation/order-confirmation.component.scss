@@ -1,0 +1,54 @@
+@import "src/assets/scss/variables";
+
+:host {
+  width: 998px;
+  padding: 72px 58px 52px 56px;
+  background-color: $main-bg-color;
+  box-shadow: 3px 5px 10px rgba(89, 98, 112, 0.5);
+  border-radius: 25px;
+}
+
+.separator {
+  opacity: 0.3;
+  border: 2px solid $main-color;
+  width: 100%;
+}
+
+.product-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 25px;
+  margin-left: 25px;
+}
+
+.action-button {
+  &.success {
+    position: absolute;
+    top: 3px;
+    right: -40px;
+  }
+
+  &.warning {
+    position: absolute;
+    top: 3px;
+    left: -40px;
+  }
+}
+
+.order-wrap {
+  padding: 0 45px;
+}
+
+.order-summary {
+  margin-bottom: 37px;
+  position: relative;
+  background-color: $main-color-bg-opacity;
+  border-radius: 25px;
+  padding: 29px 45px 35px 42px;
+}
+
+@media only screen and (max-width: 1000px) {
+  :host {
+    width: 100%;
+  }
+}

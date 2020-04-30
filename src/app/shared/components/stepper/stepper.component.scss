@@ -1,0 +1,40 @@
+@import "src/assets/scss/variables";
+
+:host ::ng-deep {
+  mat-horizontal-stepper {
+    background-color: transparent;
+
+    .mat-step-header {
+      height: 25px !important;
+      padding: 0;
+    }
+
+    .mat-step-icon {
+      width: 25px;
+      height: 25px;
+      margin-left: 0 !important;
+      background-color: $main-color;
+
+      &.mat-step-icon-selected  {
+        background-color: $main-bg-color;
+        border: 2px solid $active-color-secondary;
+      }
+    }
+
+    .mat-horizontal-content-container {
+      display: none;
+    }
+
+    .mat-step-label {
+      display: none;
+    }
+
+    .mat-stepper-horizontal-line {
+      opacity: 0.5;
+      border-top-width: 2px;
+      border-top-color: $main-color;
+      min-width: 54px;
+      margin: 0 !important;
+    }
+  }
+}

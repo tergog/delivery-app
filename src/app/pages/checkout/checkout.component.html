@@ -1,0 +1,8 @@
+<span class="text text__title text__main-dark">אוקיי אז מה היה לנו?</span>
+<span class="text text__medium text__secondary m__bottom--15">סיכום הזמנה</span>
+
+<app-stepper class="m__bottom--36" (stepSelected)="onStepClick($event)"></app-stepper>
+
+<app-order-confirmation *ngIf="selectedStepIndex === 0"></app-order-confirmation>
+<app-delivery-information *ngIf="selectedStepIndex === 1"></app-delivery-information>
+<app-billing-information *ngIf="selectedStepIndex === 2"></app-billing-information>

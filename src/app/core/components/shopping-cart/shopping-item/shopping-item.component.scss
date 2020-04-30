@@ -20,20 +20,3 @@
   background-color: $main-bg-color;
   padding: 0 11px 9px;
 }
-
-.action-button {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-
-  &.success {
-    border: 2px solid $success-color;
-  }
-
-  &.warning {
-    border: 2px solid $warning-color;
-  }
-}

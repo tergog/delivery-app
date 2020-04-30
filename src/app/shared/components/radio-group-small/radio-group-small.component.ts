@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-radio-group-small',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./radio-group-small.component.scss']
 })
 export class RadioGroupSmallComponent implements OnInit {
+  @HostBinding('class.extended')
+  @Input() extended: boolean;
 
   constructor() { }
 
