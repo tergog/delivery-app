@@ -9,7 +9,47 @@
   </div>
 </div>
 
-<div class="d__flex d__flex--column">
-  <span class="text text__medium text__secondary m__bottom--5">העדפות</span>
+<div class="d__flex d__flex--column m__bottom--55">
+  <span class="text text__medium text__center--xxs text__secondary m__bottom--5">העדפות</span>
   <app-radio-group-small [extended]="true"></app-radio-group-small>
 </div>
+
+<span class="d__block text__center--xxs text text__medium text__secondary m__bottom--20 m__bottom--10--xxs">הכנס פרטי כרטיס</span>
+
+<div class="d__flex d__flex--column--s m__bottom--40">
+  <div class="d__flex d__flex--column m__left--23">
+    <div class="d__flex d__flex--column w__385 m__bottom--20">
+      <span class="text text__secondary text__small m__bottom--5">שם בעל הכרטיס</span>
+      <app-input [placeholder]="'החפשמ םש יטרפ םש'"></app-input>
+    </div>
+
+    <div class="d__flex d__flex--column w__385 m__bottom--20--s">
+      <span class="text text__secondary text__small m__bottom--5">מספר כרטיס</span>
+      <app-input [placeholder]="'**** **** **** ****'"></app-input>
+    </div>
+  </div>
+
+  <div class="d__flex d__flex__wrap">
+    <div class="d__flex d__flex--column m__bottom--20 m__left--21">
+      <span class="text text__secondary text__small m__bottom--5">חודש</span>
+      <app-select [text]="''"></app-select>
+    </div>
+
+    <div class="d__flex d__flex--column m__left--21--s m__bottom--20">
+      <span class="text text__secondary text__small m__bottom--5">שנה</span>
+      <app-select [text]="''"></app-select>
+    </div>
+
+    <div class="d__flex d__flex--column w__182">
+      <span class="text text__secondary text__small m__bottom--5">CVV/CVC</span>
+      <app-input [placeholder]="'***'"></app-input>
+    </div>
+  </div>
+</div>
+
+<div class="d__flex d__flex--justify-center">
+  <button class="active w__386">
+    <span class="text text__main-light text__small text__shadow">אישור והמשך הזמנה</span>
+  </button>
+</div>
+

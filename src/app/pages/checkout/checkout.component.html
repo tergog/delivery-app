@@ -1,7 +1,17 @@
 <span class="text text__title text__main-dark">אוקיי אז מה היה לנו?</span>
 <span class="text text__medium text__secondary m__bottom--15">סיכום הזמנה</span>
 
-<app-stepper class="m__bottom--36" (stepSelected)="onStepClick($event)"></app-stepper>
+<div class="d__flex d__flex--justify-center w__100 pos__relative">
+  <app-stepper class="m__bottom--36" (stepSelected)="onStepClick($event)"></app-stepper>
+
+  <div class="step-action-first" *ngIf="selectedStepIndex === 0">
+    <span class="d__none d__block--xs text text__small text__active-secondary text__alef">חזרה לחנות</span>
+  </div>
+
+  <div class="step-action" *ngIf="selectedStepIndex === 1 || selectedStepIndex === 2">
+    <span class="d__none d__block--xs text text__small text__active-secondary text__alef">רוזח</span>
+  </div>
+</div>
 
 <app-order-confirmation *ngIf="selectedStepIndex === 0"></app-order-confirmation>
 <app-delivery-information *ngIf="selectedStepIndex === 1"></app-delivery-information>

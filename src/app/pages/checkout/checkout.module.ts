@@ -7,6 +7,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
 import { DeliveryInformationComponent } from './delivery-information/delivery-information.component';
 import { BillingInformationComponent } from './billing-information/billing-information.component';
+import {CoreModule} from '../../core/core.module';
 
 const routes = [
   {
@@ -25,7 +26,8 @@ const routes = [
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    CoreModule
   ]
 })
 export class CheckoutModule { }

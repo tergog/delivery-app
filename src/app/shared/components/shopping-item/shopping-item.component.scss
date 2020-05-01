@@ -1,4 +1,4 @@
-@import "src/assets/scss/variables";
+@import "../../../../assets/scss/variables";
 
 :host {
   display: flex;
@@ -15,8 +15,8 @@
 
 .price {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 78px;
   background-color: $main-bg-color;
-  padding: 0 11px 9px;
+  padding: 10px 11px 9px;
 }

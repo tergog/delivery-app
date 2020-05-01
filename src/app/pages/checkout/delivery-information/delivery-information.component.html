@@ -43,19 +43,30 @@
     <app-input [placeholder]="'בחר\\י'"></app-input>
   </div>
 
-  <div class="d__flex d__flex--column w__386 m__bottom--20">
-    <span class="text text__secondary text__small m__bottom--5">מס' סועדים</span>
-
-    <div class="d__flex">
-      <app-circle-icon [type]="'minus-lg'"></app-circle-icon>
-      <span class="text text__secondary text__number-lg m__left--12 m__right__12">2</span>
-      <app-circle-icon [type]="'plus-lg'"></app-circle-icon>
-    </div>
+  <div class="d__none--xs w__386 m__bottom--20">
+    <ng-container *ngTemplateOutlet="quantity"></ng-container>
   </div>
 
-  <div class="d__flex d__flex--column w__386 m__bottom--20">
+  <ng-template #quantity>
+    <div class="d__flex d__flex--column">
+      <span class="text text__secondary text__small m__bottom--5">מס' סועדים</span>
+
+      <div class="d__flex">
+        <app-circle-icon [type]="'minus-lg'"></app-circle-icon>
+        <span class="text text__secondary text__number-lg m__left--12 m__right__12">2</span>
+        <app-circle-icon [type]="'plus-lg'"></app-circle-icon>
+      </div>
+    </div>
+  </ng-template>
+
+  <div class="d__flex d__flex--column w__386">
     <span class="text text__secondary text__small m__bottom--5">הוסף סכום חד פעמי</span>
     <app-checkbox></app-checkbox>
+  </div>
+
+
+  <div class="d__none d__block--xs">
+    <ng-container *ngTemplateOutlet="quantity"></ng-container>
   </div>
 </div>
 

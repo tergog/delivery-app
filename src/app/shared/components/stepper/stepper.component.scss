@@ -7,6 +7,13 @@
     .mat-step-header {
       height: 25px !important;
       padding: 0;
+      overflow: unset !important;
+
+      &:last-of-type {
+        .mat-step-icon-state-edit + .mat-step-label.mat-step-label-active {
+          display: none;
+        }
+      }
     }
 
     .mat-step-icon {
@@ -25,6 +32,17 @@
       display: none;
     }
 
+    .mat-step-icon-state-edit + .mat-step-label.mat-step-label-active {
+      display: inline-block;
+      overflow: unset;
+      background: salmon;
+      height: 2px;
+      position: absolute;
+      left: -54px;
+      z-index: 5;
+      width: 54px;
+    }
+
     .mat-step-label {
       display: none;
     }
@@ -35,6 +53,26 @@
       border-top-color: $main-color;
       min-width: 54px;
       margin: 0 !important;
+    }
+
+    .mat-step-icon-state-number {
+      .mat-step-icon-content {
+        display: none !important;
+      }
+    }
+  }
+
+  .mat-step-icon-state-edit {
+    background-color: $active-color-secondary !important;
+
+    .mat-step-icon-content {
+      width: 100%;
+      height: 100%;
+      background: url(src/assets/images/icons/completed.svg) center center no-repeat;
+    }
+
+    mat-icon {
+      display: none;
     }
   }
 }

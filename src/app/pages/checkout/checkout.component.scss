@@ -8,9 +8,32 @@
   background-color: $main-color-light;
 }
 
+.step-action-first {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  max-width: 50px;
+}
+
+.step-action {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 @media only screen and (max-width: 1000px) {
   :host {
     padding: 40px 0 72px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :host {
+    padding: 17px 17px 29px;
+  }
+
+  .text__title {
+    font-size: 33px;
+    line-height: 37px;
   }
 }

@@ -1,0 +1,20 @@
+@import "src/assets/scss/variables";
+
+:host {
+  input[type='checkbox'] {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: $main-color;
+    outline: none;
+    background-color: $main-color-light;
+    border: none;
+    box-shadow: inset 0 2px 2px rgba(45, 54, 67, 0.2);
+    border-radius: 10px;
+    appearance: none;
+
+    &:checked {
+      background: url(src/assets/images/icons/checkbox-check.svg) center center no-repeat $active-color-main;
+    }
+  }
+}

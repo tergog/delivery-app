@@ -61,6 +61,16 @@ body {
     white-space: nowrap;
   }
 
+  &__center {
+    text-align: center;
+
+    &--xxs {
+      @media only screen and (max-width: 450px) {
+        text-align: center;
+      }
+    }
+  }
+
   &__number {
     font-size: 27px;
     line-height: 27px;
@@ -191,6 +201,12 @@ button {
         display: block !important;
       }
     }
+
+    @media only screen and (max-width: 600px) {
+      &--xs {
+        display: block !important;
+      }
+    }
   }
 
   &__flex {
@@ -198,6 +214,10 @@ button {
 
     &--inline {
       display: inline-flex;
+    }
+
+    &--1 {
+      flex: 1;
     }
 
     &__wrap {
@@ -212,6 +232,12 @@ button {
 
     &--column {
       flex-direction: column;
+
+      @media only screen and (max-width: 800px) {
+        &--s {
+          flex-direction: column;
+        }
+      }
 
       @media only screen and (max-width: 600px) {
         &--xs {

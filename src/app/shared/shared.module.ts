@@ -15,6 +15,7 @@ import { TextareaComponent } from './components/textarea/textarea.component';
 import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { ShoppingItemComponent } from './components/shopping-item/shopping-item.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
     TextareaComponent,
     SlideToggleComponent,
     StepperComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    ShoppingItemComponent
   ],
   imports: [
     CommonModule,
@@ -47,7 +49,8 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
     TextareaComponent,
     SlideToggleComponent,
     StepperComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    ShoppingItemComponent
   ],
   entryComponents: [
     CircleIconComponent,
